@@ -6,34 +6,46 @@ function runGame() {
 
 }
 
-function duplicateIcons() {
-    let myIcons = [
-        assets/images/card1.png,
-        assets/images/card2.png,
-        assets/images/card3.png,
-        assets/images/card4.png,
-        assets/images/card5.png,
-        assets/images/card6.png,
-        assets/images/card7.png,
-        assets/images/card8.png,
-        assets/images/card9.png,
-        assets/images/card10.png
-    ];
 
-    let duplicate = myIcons * myIcons;
-    console.log(duplicate);
+/**
+ * duplicate icon array to may 10 pairs.
+ */
+function duplicateIcons() {
+let myIcons = [
+    "assets/images/card1.png",
+    "assets/images/card2.png",
+    "assets/images/card3.png",
+    "assets/images/card4.png",
+    "assets/images/card5.png",
+    "assets/images/card6.png",
+    "assets/images/card7.png",
+    "assets/images/card8.png",
+    "assets/images/card9.png",
+    "assets/images/card10.png"
+];
+
+    let duplicate = [...myIcons, ...myIcons];
+    let randomIcon = Math.floor(Math.random() * duplicate.length);
+    console.log(randomIcon);
+   
 }
 
 duplicateIcons();
 
 
 /**
- * function to shuffle cards and duplicate card array,
+ * function to shuffle cards and assign icon to cards
  */
 function cardShuffle() {
 let cards = document.getElementsByClassName("card");
 
+
+
+
+
 }
+
+cardShuffle();
 
 
 
