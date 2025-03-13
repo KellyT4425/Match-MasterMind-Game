@@ -52,8 +52,6 @@ main {
     background-color: #2A778A;
     flex: 1;
     border-radius: 1em;
-    
-    
 }
 
 .row {
@@ -62,7 +60,7 @@ main {
     margin-bottom: 10px;
 }
 
-
+  
 .fa-puzzle-piece {
     color: #D3BAAF;
 }
