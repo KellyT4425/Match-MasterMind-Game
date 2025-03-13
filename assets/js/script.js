@@ -63,6 +63,8 @@ cardShuffle();
  */
 function flipCard() {
   cardsFront = document.getElementsByClassName("card");
+
+  this.classList.toggle("flipped");
   
 }
 
