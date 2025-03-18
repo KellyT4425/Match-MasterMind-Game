@@ -128,12 +128,11 @@ main {
     background-color: #A8234C;
     border: none;
     padding: 0.5em 1.5em 0.5em 1.5em;
-    margin: 2rem;
+    margin-top: 2rem;
     border-radius: 0.5rem;
     color: #D3BAAF;
     font-size: 0.9em;
     font-family: "Rubik Bubbles", serif;
-    letter-spacing: 1px;
 }
 
 

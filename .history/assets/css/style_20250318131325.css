@@ -26,7 +26,6 @@ body {
     font-size: 1.5rem;
     margin-top: 30px;
     color: #A8234C;
-    letter-spacing: 2px;
 }
 
 main {
@@ -46,7 +45,6 @@ main {
     max-width: 1200px;
     margin: 10px;
     padding: 1em;
-    border: 2px solid #A8234C;
 }
 
 .flipped i {
@@ -70,7 +68,6 @@ main {
     width: 300px; 
     height: 100px; 
     perspective: 500px; 
-    border: solid 2px #000000;
   }
   
 .card-inner {
@@ -82,9 +79,10 @@ main {
     
   }
 
-.card-back img {
+  .card-back img {
     width: 2.5rem;
-    padding-top: 0.4em;
+    align-items: center;
+    
   }
   
 .card-front, .card-back {
@@ -108,19 +106,9 @@ main {
 .card-front, .fa-puzzle-piece {
     color: #D3BAAF;
     display: flex;
-    align-content: center;
-    left: 1.2rem;
-}
-
-/* Score Area */
-.point-log, .points {
-    margin-top: 2em;
-    letter-spacing: 1px;
-}
-
-#score {
-    font-size: 2rem;
-    color: #2A778A;
+    position: relative;
+    align-self: center;
+    right: auto;
 }
 
 /* ---Shuffle Button--- */
@@ -128,12 +116,11 @@ main {
     background-color: #A8234C;
     border: none;
     padding: 0.5em 1.5em 0.5em 1.5em;
-    margin: 2rem;
+    margin-top: 2rem;
     border-radius: 0.5rem;
     color: #D3BAAF;
     font-size: 0.9em;
     font-family: "Rubik Bubbles", serif;
-    letter-spacing: 1px;
 }
 
 
