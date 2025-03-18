@@ -43,8 +43,7 @@ main {
 /* ---container holding 20 cards--- */
 .container {
     max-width: 1200px;
-    margin: 10;
-    padding: 1em;
+    margin: 10 auto;
 }
 
 
@@ -53,6 +52,7 @@ main {
     background-color: #2A778A;
     flex: 1;
     border-radius: 1em;
+    margin: 5;
 }
 
 .row {
@@ -89,6 +89,7 @@ main {
     backface-visibility: hidden; /* Hide the back side when facing away */
   }
 
+  
   /* Card front is displayed by default */
 .card-back {
     transform: rotateY(180deg);

@@ -94,9 +94,9 @@ function cardMatched() {
       () => {
         card1.style.visibility = "hidden";
         card2.style.visibility = "hidden";
-        matchScore();
       },
       matchCardFade,
+      matchScore
     );
 
     flippedCards = []; // Reset for next turn
@@ -115,13 +115,22 @@ function cardMatched() {
 /**
  * function to increment score on matched cards.
  */
+let points = [];
 
 function matchScore() {
   let score1 = parseInt(document.getElementById("score").innerText);
-  document.getElementById('score').innerText = ++score1;
+  let icon1 = document.querySelector(".card-back img").src;
+  let icon2 = document.querySelector(".card-back img").src;
 
+  if (icon1 === icon2) {
+    points = score1++;
+  }
+
+  
+  console.log(points);
 }
 
+matchScore();
 
 /**
  * shuffle button reset game.

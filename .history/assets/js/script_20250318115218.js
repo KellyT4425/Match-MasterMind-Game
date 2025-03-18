@@ -94,7 +94,6 @@ function cardMatched() {
       () => {
         card1.style.visibility = "hidden";
         card2.style.visibility = "hidden";
-        matchScore();
       },
       matchCardFade,
     );
@@ -115,13 +114,17 @@ function cardMatched() {
 /**
  * function to increment score on matched cards.
  */
+let points = [];
 
 function matchScore() {
   let score1 = parseInt(document.getElementById("score").innerText);
   document.getElementById('score').innerText = ++score1;
 
+  console.log(score1);
+
 }
 
+matchScore();
 
 /**
  * shuffle button reset game.

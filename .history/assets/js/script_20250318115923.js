@@ -122,6 +122,7 @@ function matchScore() {
 
 }
 
+matchScore();
 
 /**
  * shuffle button reset game.

@@ -76,6 +76,10 @@ main {
     
   }
 
+  i .fa-puzzle-piece, .card-back {
+    visibility: hidden;
+  }
+
   .card-back img {
     width: 2.5rem;
     align-items: center;
@@ -89,6 +93,7 @@ main {
     backface-visibility: hidden; /* Hide the back side when facing away */
   }
 
+  
   /* Card front is displayed by default */
 .card-back {
     transform: rotateY(180deg);

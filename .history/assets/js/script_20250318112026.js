@@ -33,6 +33,8 @@ function duplicateIcons() {
   return [...myIcons, ...myIcons];
 }
 
+
+
 /**
  * function the shuffle cards and assign icon to cards
  */
@@ -68,9 +70,10 @@ function flipCard() {
   }
 
   // Ensure the card isn't already flipped
-  if (!this.classList.contains("flipped")) {
+ if (!this.classList.contains("flipped")) {
     this.classList.add("flipped");
     flippedCards.push(this);
+
   }
 
   // If two cards are flipped, check for a match
@@ -83,21 +86,17 @@ function flipCard() {
  * function to determine when cards are matched, and cards disappear, score is incremented.
  */
 function cardMatched() {
-  const [card1, card2] = flippedCards;
 
-  let icon1 = card1.querySelector(".card-back img").src;
-  let icon2 = card2.querySelector(".card-back img").src;
+ const [card1, card2] = flippedCards;
+  const icon1 = card1.querySelector(".card-back img").src;
+  const icon2 = card2.querySelector(".card-back img").src;
 
   if (icon1 === icon2) {
     // Match found - Fade out the matched cards
-    setTimeout(
-      () => {
-        card1.style.visibility = "hidden";
-        card2.style.visibility = "hidden";
-        matchScore();
-      },
-      matchCardFade,
-    );
+    setTimeout(() => {
+      card1.style.visibility = "hidden";
+      card2.style.visibility = "hidden";
+    }, matchCardFade, matchScore);
 
     flippedCards = []; // Reset for next turn
   } else {
@@ -111,17 +110,19 @@ function cardMatched() {
   }
 }
 
-
 /**
  * function to increment score on matched cards.
  */
-
 function matchScore() {
-  let score1 = parseInt(document.getElementById("score").innerText);
-  document.getElementById('score').innerText = ++score1;
+ let score1 = document.getElementById('score');
+
+ let points = score1++;
+
+ console.log(points);
 
 }
 
+matchScore();
 
 /**
  * shuffle button reset game.

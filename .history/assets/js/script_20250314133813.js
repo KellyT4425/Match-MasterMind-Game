@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", runGame);
 const delayFlipBack = 1000;
-const matchCardFade = 500;
 
 /**
  * function to add how the game should run
@@ -32,6 +31,8 @@ function duplicateIcons() {
 
   return [...myIcons, ...myIcons];
 }
+
+
 
 /**
  * function the shuffle cards and assign icon to cards
@@ -71,6 +72,12 @@ function flipCard() {
   if (!this.classList.contains("flipped")) {
     this.classList.add("flipped");
     flippedCards.push(this);
+
+    // Hide the puzzle piece on flip
+    let puzzlePiece = this.querySelector(".card-front img");
+    if (puzzlePiece) {
+      puzzlePiece.style.visibility = "hidden";
+    }
   }
 
   // If two cards are flipped, check for a match
@@ -83,45 +90,45 @@ function flipCard() {
  * function to determine when cards are matched, and cards disappear, score is incremented.
  */
 function cardMatched() {
-  const [card1, card2] = flippedCards;
 
-  let icon1 = card1.querySelector(".card-back img").src;
-  let icon2 = card2.querySelector(".card-back img").src;
+ const [card1, card2] = flippedCards;
+  const icon1 = card1.querySelector(".card-back img").src;
+  const icon2 = card2.querySelector(".card-back img").src;
 
   if (icon1 === icon2) {
     // Match found - Fade out the matched cards
-    setTimeout(
-      () => {
-        card1.style.visibility = "hidden";
-        card2.style.visibility = "hidden";
-        matchScore();
-      },
-      matchCardFade,
-    );
+    setTimeout(() => {
+      card1.style.visibility = "hidden";
+      card2.style.visibility = "hidden";
+    }, 500);
 
     flippedCards = []; // Reset for next turn
   } else {
-    // No match - Flip cards back.
+    // No match - Flip cards back and restore puzzle piece
     setTimeout(() => {
       card1.classList.remove("flipped");
       card2.classList.remove("flipped");
 
+      let puzzle1 = card1.querySelector(".card-front img");
+      let puzzle2 = card2.querySelector(".card-front img");
+
+      if (puzzle1) puzzle1.style.visibility = "visible";
+      if (puzzle2) puzzle2.style.visibility = "visible";
+
       flippedCards = []; // Reset for next turn
-    }, delayFlipBack);
+    }, 1000);
   }
 }
 
+/**
+ * function if there is no match, include hiding cards again
+ */
+function noMatch() {}
 
 /**
  * function to increment score on matched cards.
  */
-
-function matchScore() {
-  let score1 = parseInt(document.getElementById("score").innerText);
-  document.getElementById('score').innerText = ++score1;
-
-}
-
+function matchScore() {}
 
 /**
  * shuffle button reset game.
