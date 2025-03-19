@@ -16,10 +16,6 @@ body {
   font-style: normal;
   text-align: center;
   background-image: url("/assets/images/image-space.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
 }
 
 /* --- header, h1 styling--- */

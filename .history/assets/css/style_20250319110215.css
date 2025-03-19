@@ -15,11 +15,9 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  background-image: url("/assets/images/image-space.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
+  background-image: url("/assets/images/image-fireworks.jpg");
+  z-index: 1;
+  background-color: #000000;
 }
 
 /* --- header, h1 styling--- */
@@ -37,8 +35,8 @@ main {
 }
 
 p {
-    letter-spacing: 2px;
-    color: #d3baaf;
+    letter-spacing: 1px;
+    color: #ffffff;
 }
 /* ---Game board panel containing cards--- */
 .game-board {
@@ -139,7 +137,7 @@ p {
   margin: 2rem;
   border-radius: 0.5rem;
   color: #d3baaf;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: "Permanent Marker", cursive;
   font-style: normal;
   letter-spacing: 0.3em;
