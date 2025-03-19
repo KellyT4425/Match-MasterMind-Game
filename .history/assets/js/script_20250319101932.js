@@ -135,6 +135,9 @@ function shuffleReset() {
 
 
   })
+
   console.log(button);
 
 }
+
+shuffleReset();

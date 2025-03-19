@@ -129,12 +129,10 @@ function matchScore() {
  */
 function shuffleReset() {
   let button = document.getElementsByClassName('btn');
-  addEventListener('click', function() {
+  document.addEventListener('click', runGame)
 
-    location.reload();
-
-
-  })
   console.log(button);
 
 }
+
+shuffleReset();

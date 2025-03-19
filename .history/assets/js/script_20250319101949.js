@@ -135,6 +135,7 @@ function shuffleReset() {
 
 
   })
+
   console.log(button);
 
 }

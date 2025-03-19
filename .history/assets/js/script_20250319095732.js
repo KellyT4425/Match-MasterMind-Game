@@ -128,13 +128,7 @@ function matchScore() {
  * shuffle button reset game.
  */
 function shuffleReset() {
-  let button = document.getElementsByClassName('btn');
-  addEventListener('click', function() {
-
-    location.reload();
-
-
-  })
-  console.log(button);
+  let button = document.querySelector('button');
 
 }
+shuffleReset();
