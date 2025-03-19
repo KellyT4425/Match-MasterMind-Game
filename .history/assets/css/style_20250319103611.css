@@ -15,8 +15,7 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  background-image: url("/assets/images/background-img.jpg");
-  background-color: #000000;
+  background-image: url("assets/images/background-img.jpg");
 }
 
 /* --- header, h1 styling--- */
@@ -31,11 +30,6 @@ header {
 
 main {
   margin-top: 6rem;
-}
-
-p {
-    letter-spacing: 1px;
-    color: #ffffff;
 }
 /* ---Game board panel containing cards--- */
 .game-board {
@@ -131,7 +125,7 @@ p {
 /* ---Shuffle Button--- */
 .btn {
   background-color: #a8234c;
-  border: solid 2px #ffffff;
+  border: none;
   padding: 0.5em 1.5em 0.5em 1.5em;
   margin: 2rem;
   border-radius: 0.5rem;
@@ -139,7 +133,7 @@ p {
   font-size: 0.9em;
   font-family: "Permanent Marker", cursive;
   font-style: normal;
-  letter-spacing: 0.3em;
+  letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -32,14 +32,10 @@ header {
 main {
   margin-top: 6rem;
 }
-
-p {
-    letter-spacing: 1px;
-    color: #ffffff;
-}
 /* ---Game board panel containing cards--- */
 .game-board {
   background: #c49c26;
+  opacity: 0.5;
   margin: 1rem;
   padding: 2rem;
   border-radius: 1em;

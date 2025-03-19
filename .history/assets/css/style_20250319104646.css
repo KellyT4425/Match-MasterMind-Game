@@ -16,6 +16,7 @@ body {
   font-style: normal;
   text-align: center;
   background-image: url("/assets/images/background-img.jpg");
+  opacity: 0.5;
   background-color: #000000;
 }
 
@@ -31,11 +32,6 @@ header {
 
 main {
   margin-top: 6rem;
-}
-
-p {
-    letter-spacing: 1px;
-    color: #ffffff;
 }
 /* ---Game board panel containing cards--- */
 .game-board {

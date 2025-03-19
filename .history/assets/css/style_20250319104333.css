@@ -32,11 +32,6 @@ header {
 main {
   margin-top: 6rem;
 }
-
-p {
-    letter-spacing: 1px;
-    color: #ffffff;
-}
 /* ---Game board panel containing cards--- */
 .game-board {
   background: #c49c26;
@@ -130,7 +125,7 @@ p {
 
 /* ---Shuffle Button--- */
 .btn {
-  background-color: #a8234c;
+  background-color: #000000;
   border: solid 2px #ffffff;
   padding: 0.5em 1.5em 0.5em 1.5em;
   margin: 2rem;
