@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  background-image: url("../../assets/images/space-illus.png");
+  background-image: url("/assets/images/space-illus.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -62,10 +62,6 @@ p {
   visibility: hidden;
 }
 
-#back-panel {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 .col {
   padding: 1.5rem 0;
   background-color: #2a778a;
@@ -84,10 +80,6 @@ p {
   height: 100px;
   perspective: 500px;
   border: solid 2px #000000;
-}
-
-.card:hover {
-  background-color:#a8234c;
 }
 
 .card-inner {
@@ -151,12 +143,12 @@ p {
   color: #d3baaf;
   font-size: 1em;
   font-family: "Permanent Marker", cursive;
-  font-weight: 0;
+  font-style: normal;
   letter-spacing: 0.3em;
 }
 
 .btn:hover {
-  background-color: #2a778a;
+  background-color: #000000;
 }
 
 /* Media Queries - responsive design */

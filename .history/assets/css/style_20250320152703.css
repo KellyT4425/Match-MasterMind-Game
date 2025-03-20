@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  background-image: url("../../assets/images/space-illus.png");
+  background-image: url("/assets/images/space-illus.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -60,10 +60,6 @@ p {
 
 .flipped i {
   visibility: hidden;
-}
-
-#back-panel {
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .col {
