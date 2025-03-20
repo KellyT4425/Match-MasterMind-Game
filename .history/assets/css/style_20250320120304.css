@@ -190,13 +190,8 @@ p {
 @media screen and (min-width: 992px) {
 
   .game-board {
-    display: inline-grid;
+    align-self: center;
   
-  }
-
-  .card {
-    width: 9rem;
-
   }
 
 }

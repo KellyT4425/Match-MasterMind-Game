@@ -40,7 +40,6 @@ p {
     letter-spacing: 2px;
     color: #d3baaf;
 }
-
 /* ---Game board panel containing cards--- */
 .game-board {
   background: #c49c26;
@@ -135,7 +134,7 @@ p {
 /* ---Shuffle Button--- */
 .btn {
   background-color: #a8234c;
-  border: none;
+  border: solid 2px #ffffff;
   padding: 0.5em 1.5em 0.5em 1.5em;
   margin: 2rem;
   border-radius: 0.5rem;
@@ -152,52 +151,11 @@ p {
 
 }
 
-@media only screen and (min-width: 768px) {
-
-  header {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  .card {
-    height: 10em;
-  }
-
-  .card-front,
-.fa-puzzle-piece {
-  color: #d3baaf;
-  display: flex;
-  align-content: center;
-  left: 3.4rem;
-  font-size: 2rem;
-}
-
-.card-back img  {
-  display: inline-grid;
-  margin-top: 1.5em;
-  color: #d3baaf;
-}
-
-.btn {
-  font-size: 1.5em;
-}
+@media only screen and (max-width: 768px) {
 
 }
 
 @media screen and (min-width: 992px) {
-
-  .game-board {
-    display: inline-grid;
-  
-  }
-
-  .card {
-    width: 9rem;
-
-  }
 
 }
 

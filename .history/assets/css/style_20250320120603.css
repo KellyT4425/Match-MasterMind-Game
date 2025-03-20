@@ -195,8 +195,8 @@ p {
   }
 
   .card {
-    width: 9rem;
-
+    width: 10rem;
+    height: 10rem;
   }
 
 }

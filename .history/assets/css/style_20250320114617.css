@@ -135,7 +135,7 @@ p {
 /* ---Shuffle Button--- */
 .btn {
   background-color: #a8234c;
-  border: none;
+  border: solid 2px #ffffff;
   padding: 0.5em 1.5em 0.5em 1.5em;
   margin: 2rem;
   border-radius: 0.5rem;
@@ -181,23 +181,13 @@ p {
   color: #d3baaf;
 }
 
-.btn {
-  font-size: 1.5em;
+img scr {
+  color: #000000;
 }
 
 }
 
 @media screen and (min-width: 992px) {
-
-  .game-board {
-    display: inline-grid;
-  
-  }
-
-  .card {
-    width: 9rem;
-
-  }
 
 }
 

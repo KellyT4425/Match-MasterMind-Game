@@ -189,16 +189,6 @@ p {
 
 @media screen and (min-width: 992px) {
 
-  .game-board {
-    display: inline-grid;
-  
-  }
-
-  .card {
-    width: 9rem;
-
-  }
-
 }
 
 @media screen and (min-width: 1200px) {
