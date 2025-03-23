@@ -139,17 +139,19 @@ function timerLog() {
   let time = 0;
   let timer;
 
-  timer = setInterval(() => {
-    time++;
-    const seconds = time % 41;
-    timeDisplay.textContent = seconds;
-  }, 1000);
+  if (time > 40) {
+    clearInterval(timer);
+    alert(
+      "Did you beat the timer, if so Congratulations. If not reset and try again :D"
+    );
 
-  alert("Can you beat the timer, you have 40 seconds :D");
-
-  while (time >= 40) {
-    location.reload();
+    timer = setInterval(() => {
+      time++;
+      const seconds = time % 41;
+      timeDisplay.textContent = seconds;
+    }, 1000);
   }
+  alert("Can you beat the timer, you have 40 seconds :D");
 
   console.log(timeDisplay);
 }

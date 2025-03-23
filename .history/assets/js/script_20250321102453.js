@@ -44,7 +44,7 @@ function cardShuffle() {
     let j = Math.floor(Math.random() * (i + 1));
     [iconArray[i], iconArray[j]] = [iconArray[j], iconArray[i]];
   }
-
+  
   /**
    * Iterates throught cardBacks array and assigns icons to card-back <div>
    */
@@ -64,6 +64,7 @@ cardShuffle();
 let flippedCards = [];
 
 function flipCard() {
+
   if (flippedCards.length >= 2) {
     return; // Prevent flipping more than two cards at once
   }
@@ -93,25 +94,29 @@ function cardMatched() {
     // Match found - Fade out the matched cards
     setTimeout(
       () => {
+
         card1.style.visibility = "hidden";
         card2.style.visibility = "hidden";
         matchScore();
       },
 
-      matchCardFade
+      matchCardFade,
     );
 
     flippedCards = []; // Reset for next turn
   } else {
     // No match - Flip cards back.
     setTimeout(() => {
+
       card1.classList.remove("flipped");
       card2.classList.remove("flipped");
 
       flippedCards = []; // Reset for next turn
-    }, delayFlipBack);
+    }, 
+    delayFlipBack);
   }
 }
+
 
 /**
  * function to increment score on matched cards.
@@ -119,37 +124,39 @@ function cardMatched() {
 
 function matchScore() {
   let score1 = parseInt(document.getElementById("score").innerText);
-  document.getElementById("score").innerText = ++score1;
+  document.getElementById('score').innerText = ++score1;
+
 }
+
 
 /**
  * shuffle button reset game.
  */
 function gameReset() {
-  let button = document.getElementsByClassName("btn");
-  addEventListener("click", function () {
+  let button = document.getElementsByClassName('btn');
+  addEventListener('click', function() {
+
     location.reload();
-  });
+
+
+  })
   console.log(button);
+
 }
 
 function timerLog() {
-  let timeDisplay = document.getElementById("time");
+  let timer = document.getElementById("timer");
 
-  let time = 0;
-  let timer;
-
-  timer = setInterval(() => {
-    time++;
-    const seconds = time % 41;
-    timeDisplay.textContent = seconds;
-  }, 1000);
-
-  alert("Can you beat the timer, you have 40 seconds :D");
-
-  while (time >= 40) {
-    location.reload();
+  if (runGame === true) {
+    setTimeout(() => {
+      60000
+    })
   }
 
-  console.log(timeDisplay);
+
+
+  console.log(timer);
+
 }
+
+timerLog();

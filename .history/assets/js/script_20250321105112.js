@@ -141,15 +141,11 @@ function timerLog() {
 
   timer = setInterval(() => {
     time++;
-    const seconds = time % 41;
-    timeDisplay.textContent = seconds;
+    const seconds = time % 40;
+    timeDisplay.textContent = `${
+      seconds < 10 ? "0" + seconds : seconds
+    }`;
   }, 1000);
-
-  alert("Can you beat the timer, you have 40 seconds :D");
-
-  while (time >= 40) {
-    location.reload();
-  }
 
   console.log(timeDisplay);
 }

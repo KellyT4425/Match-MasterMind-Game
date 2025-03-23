@@ -11,6 +11,8 @@ function runGame() {
   for (let card of cardsFront) {
     card.addEventListener("click", flipCard);
   }
+
+  
 }
 
 /**
@@ -78,6 +80,7 @@ function flipCard() {
   if (flippedCards.length === 2) {
     cardMatched(); // Delay checking to show second card
   }
+ 
 }
 
 /**
@@ -142,14 +145,17 @@ function timerLog() {
   timer = setInterval(() => {
     time++;
     const seconds = time % 41;
-    timeDisplay.textContent = seconds;
+    timeDisplay.textContent = seconds; 
   }, 1000);
 
-  alert("Can you beat the timer, you have 40 seconds :D");
-
-  while (time >= 40) {
-    location.reload();
+  if (time === 40) {
+    alert("Did you beat the timer, if so Congratulations. If not reset and try again :D")
+    
   }
+
+  alert("Can you beat the timer, you have 40 seconds :D")
 
   console.log(timeDisplay);
 }
+
+

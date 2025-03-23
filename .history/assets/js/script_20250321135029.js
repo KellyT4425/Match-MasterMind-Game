@@ -147,9 +147,5 @@ function timerLog() {
 
   alert("Can you beat the timer, you have 40 seconds :D");
 
-  while (time >= 40) {
-    location.reload();
-  }
-
   console.log(timeDisplay);
 }

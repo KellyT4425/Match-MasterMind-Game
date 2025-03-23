@@ -5,12 +5,14 @@ const matchCardFade = 500;
 /**
  * function to add how the game should run
  */
-function runGame() {
+function runGame(timerLog) {
   let cardsFront = document.getElementsByClassName("card");
 
   for (let card of cardsFront) {
     card.addEventListener("click", flipCard);
   }
+
+  
 }
 
 /**
@@ -141,15 +143,22 @@ function timerLog() {
 
   timer = setInterval(() => {
     time++;
-    const seconds = time % 41;
-    timeDisplay.textContent = seconds;
+    const seconds = time % 40;
+    timeDisplay.textContent = `${
+      seconds < 10 ? "0" + seconds : seconds
+    }`;
   }, 1000);
-
-  alert("Can you beat the timer, you have 40 seconds :D");
-
-  while (time >= 40) {
-    location.reload();
-  }
 
   console.log(timeDisplay);
 }
+
+// function restartGame() {
+//   score1 = 0;
+//   time = 0;
+//   flippedCards = [];
+//   clearInterval(timer);
+//   matchScore.textContent = score1;
+//   timeDisplay.textContent = '0:00';
+//   location.reload();
+//   runGame();
+// }
