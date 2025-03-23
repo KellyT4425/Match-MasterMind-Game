@@ -192,9 +192,8 @@ function updateHighScore(timeTaken) {
 
 function loadHighScore() {
   const savedScore = localStorage.getItem("highScore");
-  
+  console.log(savedScore);
   if (savedScore) {
     document.getElementById("highScore").textContent = savedScore;
   }
-  console.log(savedScore);
 }

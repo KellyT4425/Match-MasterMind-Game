@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", loadHighScore);
+document.addEventListener("DOMContentLoaded", runGame);
 const delayFlipBack = 1000;
 const matchCardFade = 500;
 
@@ -18,8 +18,11 @@ function runGame() {
     card.addEventListener("click", flipCard);
   }
 
-  timerLog();
+  //timer 
+  // game not going to start until start button clicked!!!
 }
+
+
 
 /**
  * duplicate icon array to make 10 pairs.
@@ -134,10 +137,7 @@ function matchScore() {
   if (matchedPairs === totalPairs) {
     clearInterval(timer);
     gameOver = true;
-    alert("Congratulations you cleared the board!");
-
-    let finalTime = document.getElementById("time").textContent;
-    updateHighScore(finalTime);
+    alert("Congratulations you cleared the board!")
   }
 }
 
@@ -159,10 +159,10 @@ function timerLog() {
 
   timer = setInterval(() => {
     time++;
-    const seconds = time % 61;
+    const seconds = time % 41;
     timeDisplay.textContent = seconds;
 
-    if (seconds >= 60) {
+    if (seconds >= 40) {
       clearInterval(timer);
       if (!gameOver) {
         alert("Game Over, you ran out of time!");
@@ -171,6 +171,7 @@ function timerLog() {
   }, 1000);
 
   alert("Can you beat the timer, you have 40 seconds :D");
+
 }
 
 function disableBoard() {
@@ -179,22 +180,4 @@ function disableBoard() {
   for (let card of allCards) {
     card.removeEventListener("click", flipCard);
   }
-}
-
-function updateHighScore(timeTaken) {
-  const currentHighScore = localStorage.getItem("highScore");
-
-  if (!currentHighScore || timeTaken < parseInt(currentHighScore)) {
-    localStorage.setItem("highScore", timeTaken);
-    document.getElementById("highScore").textContent = timeTaken;
-  }
-}
-
-function loadHighScore() {
-  const savedScore = localStorage.getItem("highScore");
-  
-  if (savedScore) {
-    document.getElementById("highScore").textContent = savedScore;
-  }
-  console.log(savedScore);
 }

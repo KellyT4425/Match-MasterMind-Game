@@ -18,8 +18,11 @@ function runGame() {
     card.addEventListener("click", flipCard);
   }
 
-  timerLog();
+  timerLog(); 
+  
 }
+
+
 
 /**
  * duplicate icon array to make 10 pairs.
@@ -137,7 +140,7 @@ function matchScore() {
     alert("Congratulations you cleared the board!");
 
     let finalTime = document.getElementById("time").textContent;
-    updateHighScore(finalTime);
+    updateHighScore();
   }
 }
 
@@ -171,6 +174,7 @@ function timerLog() {
   }, 1000);
 
   alert("Can you beat the timer, you have 40 seconds :D");
+
 }
 
 function disableBoard() {
@@ -188,13 +192,13 @@ function updateHighScore(timeTaken) {
     localStorage.setItem("highScore", timeTaken);
     document.getElementById("highScore").textContent = timeTaken;
   }
+  
 }
 
 function loadHighScore() {
   const savedScore = localStorage.getItem("highScore");
-  
+
   if (savedScore) {
     document.getElementById("highScore").textContent = savedScore;
   }
-  console.log(savedScore);
 }

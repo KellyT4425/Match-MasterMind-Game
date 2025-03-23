@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", loadHighScore);
+//document.addEventListener("DOMContentLoaded", loadHighScore);
 const delayFlipBack = 1000;
 const matchCardFade = 500;
 
