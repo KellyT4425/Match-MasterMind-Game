@@ -55,6 +55,15 @@ main {
   margin-top: 1rem;
 }
 
+
+#score-log {
+  display: flex;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+
+
 p {
     letter-spacing: 2px;
     color: #d3baaf;

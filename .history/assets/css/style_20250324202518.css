@@ -37,23 +37,36 @@ main {
   margin-top: 6rem;
 }
 
-#time {
+#timer {
   color: #d3baaf;
   font-size: 1.5em;
-  padding-left: 1.5rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
 
 #start {
-  width: 5.5rem;
+  width: 5rem;
   background-color: #c49c26;
   border-radius: 0.5rem;
   border: none;
   font-family: "Permanent Marker", cursive;
   font-size: 1.5rem;
   letter-spacing: 3px;
-  border: 2px solid #a8234c;
+}
+
+#run {
+  
+  align-items: center;
+}
+
+#score-log {
+  display: flex;
+  margin-left: 1rem;
   margin-top: 1rem;
 }
+
+
+
 
 p {
     letter-spacing: 2px;
@@ -159,7 +172,7 @@ p {
 .btn {
   background-color: #c49c26;
   border: 0.1em solid #a8234c;
-  padding: 2.5px;
+  padding: 0.5em 1.5em 0.5em 1.5em;
   margin: 2rem;
   border-radius: 0.5rem;
   color: #000000;

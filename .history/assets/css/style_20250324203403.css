@@ -37,10 +37,11 @@ main {
   margin-top: 6rem;
 }
 
-#time {
+#timer {
   color: #d3baaf;
   font-size: 1.5em;
-  padding-left: 1.5rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
 
 #start {
@@ -51,9 +52,20 @@ main {
   font-family: "Permanent Marker", cursive;
   font-size: 1.5rem;
   letter-spacing: 3px;
-  border: 2px solid #a8234c;
+  border: 2px solid #a8234c
+}
+
+
+#score-log {
+  display: flex;
+  margin-left: 1rem;
   margin-top: 1rem;
 }
+
+.counter {
+  padding-left: 0.5em;
+}
+
 
 p {
     letter-spacing: 2px;

@@ -136,7 +136,7 @@ function matchScore() {
     gameOver = true;
     alert("Congratulations you cleared the board!");
 
-    let finalTime = document.getElementById("time").textContent;
+    let finalTime = document.getElementById("run").textContent;
     updateHighScore(finalTime);
   }
 }
@@ -157,7 +157,7 @@ function gameReset() {
  * alerts gamover if all cards are not cleared before 60 seconds.
  */
 function timerLog() {
-  let timeDisplay = document.getElementById("time");
+  let timeDisplay = document.getElementById("run");
 
   let time = 0;
 
@@ -199,6 +199,7 @@ function updateHighScore(timeTaken) {
   }
 }
 
+updateHighScore();
 
 /**
  * loads high score from local storage and display for users. 
@@ -212,3 +213,4 @@ function loadHighScore() {
   console.log(savedScore);
 }
 
+loadHighScore();

@@ -199,7 +199,6 @@ function updateHighScore(timeTaken) {
   }
 }
 
-
 /**
  * loads high score from local storage and display for users. 
  */
@@ -211,4 +210,3 @@ function loadHighScore() {
   }
   console.log(savedScore);
 }
-

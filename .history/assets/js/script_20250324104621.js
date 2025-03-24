@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", loadHighScore);
+const delayFlipBack = 1000;
+const matchCardFade = 500;
 
 // global veriables
 let totalPairs = 10;
 let matchedPairs = 0;
 let timer;
 let gameOver = false;
-const delayFlipBack = 1000;
-const matchCardFade = 500;
 
 /**
  * function to add how the game should run
@@ -69,7 +69,7 @@ cardShuffle();
 /**
  * function to make card flip when clicked to display, icon.
  */
-let flippedCards = []; //Global Variable
+let flippedCards = [];
 
 function flipCard() {
   if (flippedCards.length >= 2) {
@@ -122,7 +122,7 @@ function cardMatched() {
 }
 
 /**
- * function to increment score on matched cards. Display message if all pairs cleared before timer runs out.
+ * function to increment score on matched cards.
  */
 
 function matchScore() {
@@ -152,10 +152,6 @@ function gameReset() {
   console.log(button);
 }
 
-/**
- * Sets game timer of 60 seconds to challenge user to clear the board of call card pairs
- * alerts gamover if all cards are not cleared before 60 seconds.
- */
 function timerLog() {
   let timeDisplay = document.getElementById("time");
 
@@ -177,9 +173,6 @@ function timerLog() {
   alert("Can you beat the timer, you have 60 seconds, Good Luck! :D");
 }
 
-/**
- * Disables event listner, until user clicks Start!.
- */
 function disableBoard() {
   const allCards = document.getElementsByClassName("card");
 
@@ -187,9 +180,7 @@ function disableBoard() {
     card.removeEventListener("click", flipCard);
   }
 }
-/**
- * updates the high score for the user. 
- */
+
 function updateHighScore(timeTaken) {
   const currentHighScore = localStorage.getItem("highScore");
 
@@ -199,10 +190,6 @@ function updateHighScore(timeTaken) {
   }
 }
 
-
-/**
- * loads high score from local storage and display for users. 
- */
 function loadHighScore() {
   const savedScore = localStorage.getItem("highScore");
   
@@ -211,4 +198,3 @@ function loadHighScore() {
   }
   console.log(savedScore);
 }
-

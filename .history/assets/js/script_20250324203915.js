@@ -157,7 +157,7 @@ function gameReset() {
  * alerts gamover if all cards are not cleared before 60 seconds.
  */
 function timerLog() {
-  let timeDisplay = document.getElementById("time");
+  let timeDisplay = document.getElementById("run");
 
   let time = 0;
 
@@ -199,7 +199,6 @@ function updateHighScore(timeTaken) {
   }
 }
 
-
 /**
  * loads high score from local storage and display for users. 
  */
@@ -211,4 +210,3 @@ function loadHighScore() {
   }
   console.log(savedScore);
 }
-

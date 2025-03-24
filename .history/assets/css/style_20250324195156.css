@@ -37,22 +37,8 @@ main {
   margin-top: 6rem;
 }
 
-#time {
-  color: #d3baaf;
-  font-size: 1.5em;
-  padding-left: 1.5rem;
-}
-
 #start {
-  width: 5.5rem;
-  background-color: #c49c26;
-  border-radius: 0.5rem;
-  border: none;
-  font-family: "Permanent Marker", cursive;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  border: 2px solid #a8234c;
-  margin-top: 1rem;
+
 }
 
 p {
@@ -102,6 +88,10 @@ p {
   height: 100px;
   perspective: 500px;
   border: solid 2px #000000;
+}
+
+.card:hover {
+  background-color:#a8234c;
 }
 
 .card-inner {
@@ -158,8 +148,8 @@ p {
 /* ---Shuffle Button--- */
 .btn {
   background-color: #c49c26;
-  border: 0.1em solid #a8234c;
-  padding: 2.5px;
+  border: 0.2em solid #a8234c;
+  padding: 0.5em 1.5em 0.5em 1.5em;
   margin: 2rem;
   border-radius: 0.5rem;
   color: #000000;
@@ -169,6 +159,9 @@ p {
   letter-spacing: 0.3em;
 }
 
+.btn:hover {
+  background-color: #2a778a;
+}
 
 /* Media Queries - responsive design */
 
