@@ -221,7 +221,7 @@ footer {
   }
 
   main {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   p {
@@ -229,6 +229,9 @@ footer {
   }
 
   .score-log {
+    display: flex;
+    align-items: left;
+    margin-left: 1rem;
     font-size: 1.6rem;
   }
 
@@ -288,6 +291,9 @@ footer {
   }
 
   .score-log {
+    display: flex;
+    align-items: left;
+    margin-left: 1rem;
     font-size: 1.6rem;
   }
 
@@ -363,7 +369,11 @@ footer {
   }
 
   .score-log {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 5em;
     font-size: 1.5em;
+
   }
 
   footer {
@@ -373,11 +383,16 @@ footer {
   
 }
 
-@media (min-width: 1200px) and (max-width: 2500px) {
+@media (min-width: 1200px) {
   .card-front {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .score-log {
+    margin-left: 15em;
+
   }
 
 }

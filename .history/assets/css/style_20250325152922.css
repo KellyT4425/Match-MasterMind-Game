@@ -229,6 +229,9 @@ footer {
   }
 
   .score-log {
+    display: flex;
+    align-items: left;
+    margin-left: 1rem;
     font-size: 1.6rem;
   }
 

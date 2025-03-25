@@ -229,6 +229,9 @@ footer {
   }
 
   .score-log {
+    display: flex;
+    align-items: left;
+    margin-left: 1rem;
     font-size: 1.6rem;
   }
 
@@ -363,7 +366,11 @@ footer {
   }
 
   .score-log {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 5em;
     font-size: 1.5em;
+
   }
 
   footer {
@@ -378,6 +385,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .score-log {
+    margin-left: 15em;
+
   }
 
 }
