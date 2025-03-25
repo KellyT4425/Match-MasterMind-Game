@@ -215,10 +215,9 @@ footer {
   }
 }
 
-@media (min-width: 576px) /*and (max-width: 768px)*/ {
+@media (min-width: 576px) and (max-width: 768px) {
   header {
     font-size: 2rem;
-    margin-bottom: 8rem;
   }
 
   main {
@@ -348,8 +347,7 @@ footer {
   }
 
   .card {
-    width: 10rem;
-    height: 8rem;
+    width: 10re.;
   }
 
   .btn {
@@ -389,7 +387,7 @@ footer {
   }
 
   .game-board {
-    width: 60rem;
+    width: 70rem;
   }
 
 }
