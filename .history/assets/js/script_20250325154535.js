@@ -170,7 +170,7 @@ function timerLog() {
       clearInterval(timer);
       if (!gameOver) {
         alert("Game Over, you ran out of time!");
-        location.reload();
+        gameReset();
       }
     }
   }, 1000);

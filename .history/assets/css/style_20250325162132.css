@@ -369,6 +369,8 @@ footer {
   footer {
     margin-top: 4rem;
   }
+
+  
 }
 
 @media (min-width: 1200px)  {
@@ -376,6 +378,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #back-panel {
+    width: 600px;
+
   }
 
 }
