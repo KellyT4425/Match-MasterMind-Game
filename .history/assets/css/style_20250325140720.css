@@ -199,14 +199,6 @@ footer {
     align-items: center;
   }
 
-  header {
-    font-size: 1.5em;
-  }
-
-  main {
-    margin-top: 5.5rem;
-  }
-
   .score-log {
     font-size: 1.2rem;
   }
@@ -216,7 +208,7 @@ footer {
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   header {
     font-size: 2rem;
   }
@@ -262,65 +254,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  header {
-    font-size: 2rem;
-  }
-
-  main {
-    margin-top: 4rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  #start {
-    margin: 1.5rem;
-    letter-spacing: 5px;
-    font-size: 2em;
-    width: 4em;
-  } 
-  
-  #time {
-    font-size: 2em;
-    letter-spacing: 2px;
-  }
-
-  .score-log {
-    display: flex;
-    align-items: left;
-    margin-left: 1rem;
-    font-size: 1.6rem;
-  }
-
-  .card {
-    height: 10em;
-  }
-
-  .card-front {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-back img {
-    padding-top: 2em;
-
-  }
-
-  .fa-puzzle-piece {
-    font-size: 2rem;
-  }
-
-  .btn {
-    font-size: 2em;
-  }
-
-
-}
-
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .game-board {
     display: inline-grid;
   }
@@ -329,36 +263,14 @@ footer {
     font-size: 2rem;
   }
 
-  main {
-    margin-top: 3.5em;
-  }
-
-  p {
-    font-size: 1.7em;
-  }
-
   header {
     letter-spacing: 7px;
-    font-size: 2.5em;
-  }
-
-  #start {
-    margin-top: 2em;
-    font-size: 1.7em;
-    padding: 5px;
-    width: 6em;
   }
 
   .card {
     width: 9rem;
   }
 
-  .btn {
-    font-size: 1.7em;
-    padding: 5px;
-    width: 6em;
-  }
-
   .card-front {
     display: flex;
     justify-content: center;
@@ -366,21 +278,14 @@ footer {
   }
 
   .score-log {
-    display: flex;
-    margin-top: 1em;
-    margin-left: 5em;
-    font-size: 1.5em;
+    margin-left: 4.5em;
 
-  }
-
-  footer {
-    margin-top: 4rem;
   }
 
   
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .card-front {
     display: flex;
     justify-content: center;
@@ -388,7 +293,7 @@ footer {
   }
 
   .score-log {
-    margin-left: 15em;
+    margin-left: 4.5em;
 
   }
 

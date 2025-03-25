@@ -199,12 +199,8 @@ footer {
     align-items: center;
   }
 
-  header {
-    font-size: 1.5em;
-  }
-
   main {
-    margin-top: 5.5rem;
+    margin-top: 2rem;
   }
 
   .score-log {
@@ -278,13 +274,6 @@ footer {
   #start {
     margin: 1.5rem;
     letter-spacing: 5px;
-    font-size: 2em;
-    width: 4em;
-  } 
-  
-  #time {
-    font-size: 2em;
-    letter-spacing: 2px;
   }
 
   .score-log {
@@ -304,13 +293,19 @@ footer {
     align-items: center;
   }
 
-  .card-back img {
-    padding-top: 2em;
-
-  }
-
   .fa-puzzle-piece {
     font-size: 2rem;
+  }
+
+
+  #start {
+    font-size: 2em;
+    width: 4em;
+  }
+
+  #time {
+    font-size: 2em;
+    letter-spacing: 2px;
   }
 
   .btn {
@@ -388,7 +383,7 @@ footer {
   }
 
   .score-log {
-    margin-left: 15em;
+    margin-left: 9.5em;
 
   }
 

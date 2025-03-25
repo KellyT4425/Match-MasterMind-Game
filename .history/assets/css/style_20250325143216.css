@@ -204,7 +204,7 @@ footer {
   }
 
   main {
-    margin-top: 5.5rem;
+    margin-top: 5rem;
   }
 
   .score-log {
@@ -304,11 +304,6 @@ footer {
     align-items: center;
   }
 
-  .card-back img {
-    padding-top: 2em;
-
-  }
-
   .fa-puzzle-piece {
     font-size: 2rem;
   }
@@ -388,7 +383,7 @@ footer {
   }
 
   .score-log {
-    margin-left: 15em;
+    margin-left: 9.5em;
 
   }
 
