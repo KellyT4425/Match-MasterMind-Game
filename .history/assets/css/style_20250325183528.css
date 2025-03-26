@@ -324,6 +324,7 @@ footer {
 
   .fa-puzzle-piece {
     font-size: 2rem;
+    padding-top: 1em;
   }
 
   main {
@@ -349,11 +350,6 @@ footer {
   .card {
     width: 10rem;
     height: 8rem;
-  }
-
-  .card-back img {
-    padding-top: 1em;
-
   }
 
   .btn {
@@ -390,11 +386,6 @@ footer {
 
   .card {
     height: 12rem;
-  }
-
-  .card-back img {
-    padding-top: 3em;
-
   }
 
   .game-board {

@@ -352,7 +352,7 @@ footer {
   }
 
   .card-back img {
-    padding-top: 1em;
+    padding-top: 0.8em;
 
   }
 
@@ -390,11 +390,6 @@ footer {
 
   .card {
     height: 12rem;
-  }
-
-  .card-back img {
-    padding-top: 3em;
-
   }
 
   .game-board {
