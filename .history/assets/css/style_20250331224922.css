@@ -14,9 +14,11 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  position: relative;
   background-image: url("../../assets/images/space-illus.png");
-  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 /* --- header, h1 styling--- */
@@ -61,7 +63,6 @@ main {
 #highScore {
   padding-left: 0.5em;
   color: #a8234c;
-  letter-spacing: 3px;
 }
 
 p {
@@ -87,6 +88,11 @@ p {
 
 .flipped i {
   visibility: hidden;
+}
+
+#back-panel {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
 }
 
 .col {
@@ -204,7 +210,7 @@ p {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) /*and (max-width: 768px) */ {
   header {
     font-size: 2rem;
     margin-bottom: 8rem;
@@ -347,6 +353,10 @@ p {
     width: 6em;
   }
 
+  .game-board {
+    width: 60rem;
+  }
+
   .card-front {
     display: flex;
     justify-content: center;
@@ -371,5 +381,9 @@ p {
 
   .card-back img {
     padding-top: 3em;
+  }
+
+  .game-board {
+    width: 60rem;
   }
 }

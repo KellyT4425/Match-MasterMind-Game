@@ -19,6 +19,7 @@ body {
   background-size: cover;
 }
 
+
 /* --- header, h1 styling--- */
 header {
   height: 3rem;
@@ -61,7 +62,6 @@ main {
 #highScore {
   padding-left: 0.5em;
   color: #a8234c;
-  letter-spacing: 3px;
 }
 
 p {
@@ -88,6 +88,11 @@ p {
 .flipped i {
   visibility: hidden;
 }
+
+/*#back-panel {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+}*/
 
 .col {
   padding: 1.5rem 0;

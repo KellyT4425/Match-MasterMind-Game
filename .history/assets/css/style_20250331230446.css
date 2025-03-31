@@ -14,9 +14,11 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  position: relative;
   background-image: url("../../assets/images/space-illus.png");
-  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 /* --- header, h1 styling--- */
@@ -61,7 +63,6 @@ main {
 #highScore {
   padding-left: 0.5em;
   color: #a8234c;
-  letter-spacing: 3px;
 }
 
 p {
@@ -88,6 +89,11 @@ p {
 .flipped i {
   visibility: hidden;
 }
+
+/*#back-panel {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+}*/
 
 .col {
   padding: 1.5rem 0;

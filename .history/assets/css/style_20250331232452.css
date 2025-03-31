@@ -89,6 +89,11 @@ p {
   visibility: hidden;
 }
 
+/*#back-panel {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+}*/
+
 .col {
   padding: 1.5rem 0;
   background-color: #2a778a;
